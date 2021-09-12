@@ -21,7 +21,7 @@ let estados = ['Minas Gerais', 'São Paulo', 'Brasilia', 'Macapá', 'Góias', 'S
 
 let nomes = ['Steves Jobs', 'Mark Zuckerberg ', 'Bill Gates', 'Alex Salgado']
 
-let ativades = ['sobre as inovaçoes do mercado de tecnologia', 'atividades repetitivas no processo de desenvolvimento de software']
+let ativades = ['sobre as inovaçoes do mercado de tecnologia', 'sobre as atividades repetitivas no processo de desenvolvimento de software']
 
 let universidades = ['federal', 'municipal', 'estadual'];
 
