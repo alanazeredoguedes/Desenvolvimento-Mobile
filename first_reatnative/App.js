@@ -37,7 +37,7 @@ export default class App extends Component {
                 <Text></Text>
                 <Text>Super Man - 6º Período</Text>
                 <Text></Text>
-                <Text>Unilasalle RJ</Text>
+                <Text>Pirulasalle RJ</Text>
                 <Text></Text>
 
                 <Text>31/08/21</Text>
