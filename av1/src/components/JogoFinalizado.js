@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import { StyleSheet, Text, TextInput, ImageBackground, Button, View } from 'react-native';
+const image = require('../../assets/background.png') ;
 
 
 function JogoFinalizado(props) {
@@ -13,6 +14,7 @@ function JogoFinalizado(props) {
     return (
 
         <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
             <Text style={styles.titulo}>Jogo Concluido!</Text>
 
@@ -21,7 +23,7 @@ function JogoFinalizado(props) {
             </Text>
 
             <Button title={'Pagina Inicial'} onPress={continuar}/>
-
+            </ImageBackground>
         </View>
 
     )
@@ -36,13 +38,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
     },
     titulo: {
         fontSize: 40,
         color: '#136bde',
         marginBottom: 30,
+    },
+    image: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     descricao: {
         fontSize: 17,

@@ -1,29 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, Image, TextInput, Button, View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, Text, Image, TextInput,ImageBackground, Button, View } from 'react-native';
 import Moment from 'react-moment';
 import 'moment-timezone';
 import ReactInterval from 'react-interval';
+const image = require('../../assets/background.png') ;
 
 
 function Jogo(props) {
     const { navigate } = props.navigation
 
     const path = '../../assets/opcoes/'
-    let dados = [{
-                imagem: require(path + 'bolsonaro1.jpg'),
-                opcaoCorreta: 'BolsoTrump',
-                opcao1: 'Bolsonaro',
-                opcao2: 'Lula',
-                opcao3: 'BolsoTrump',
-            },
-            {
-                imagem: require(path + 'lula1.jpg'),
-                opcaoCorreta: 'Lula',
-                opcao1: 'Marcondes',
-                opcao2: 'Lula',
-                opcao3: 'Juca',
-            },
-            /*{
+    let dados = [
+        {
+            imagem: require( path + 'bolsonaro1.jpg' ),
+            opcaoCorreta: 'BolsoTrump',
+            opcao1: 'Bolsonaro',
+            opcao2: 'Lula',
+            opcao3: 'BolsoTrump',
+        },
+       {
+            imagem: require( path + 'lula1.jpg' ),
+            opcaoCorreta: 'Lula',
+            opcao1: 'Marcondes',
+            opcao2: 'Lula',
+            opcao3: 'Juca',
+        },
+        {
            imagem: require( path + 'carmen-lucia1.jpeg' ),
            opcaoCorreta: 'Carmem Lucia',
            opcao1: 'Maria Joaquina',
@@ -57,105 +59,104 @@ function Jogo(props) {
            opcao1: 'Pyong Lee',
            opcao2: 'Xi Jinping',
            opcao3: 'Ursinho Pooh',
-       },*/
-            /*{
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },
-            {
-                imagem: require( path + '' ),
-                opcaoCorreta: '',
-                opcao1: '',
-                opcao2: '',
-                opcao3: '',
-            },*/
-        ]
-        //dados = dados.sort(() => Math.random() - 0.5)
+       },
+        /*{
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },
+        {
+            imagem: require( path + '' ),
+            opcaoCorreta: '',
+            opcao1: '',
+            opcao2: '',
+            opcao3: '',
+        },*/
+    ]
+    //dados = dados.sort(() => Math.random() - 0.5)
 
     const [score, setScore] = useState(0)
     const [acertos, setAcertos] = useState(0)
     const [erros, setErros] = useState(0)
-    const [imagemVez, setImagemVez] = useState(dados[0]['imagem'])
-    const [opcaoCorreta, setOpcaoCorreta] = useState(dados[0]['opcaoCorreta'])
-    const [opcao1, setOpcao1] = useState(dados[0]['opcao1'])
-    const [opcao2, setOpcao2] = useState(dados[0]['opcao2'])
-    const [opcao3, setOpcao3] = useState(dados[0]['opcao3'])
+    const [imagemVez, setImagemVez] = useState( dados[0]['imagem'] )
+    const [opcaoCorreta, setOpcaoCorreta] = useState( dados[0]['opcaoCorreta'] )
+    const [opcao1, setOpcao1] = useState( dados[0]['opcao1'] )
+    const [opcao2, setOpcao2] = useState( dados[0]['opcao2'] )
+    const [opcao3, setOpcao3] = useState( dados[0]['opcao3'] )
     const [opcoesIndex, setOpcoesIndex] = useState(1)
     const [currentTime, setCurrentTime] = useState(120);
-    const [tempoExibir, setTempoExibir] = useState('02:00');
-
+    const [statusJogo, setStatusJogo] = useState(0);
 
     const novaOpcao = () => {
 
-        setImagemVez(dados[opcoesIndex]['imagem'])
-        setOpcaoCorreta(dados[opcoesIndex]['opcaoCorreta'])
-        setOpcao1(dados[opcoesIndex]['opcao1'])
-        setOpcao2(dados[opcoesIndex]['opcao2'])
-        setOpcao3(dados[opcoesIndex]['opcao3'])
+        setImagemVez( dados[opcoesIndex]['imagem'] )
+        setOpcaoCorreta( dados[opcoesIndex]['opcaoCorreta'] )
+        setOpcao1( dados[opcoesIndex]['opcao1'] )
+        setOpcao2( dados[opcoesIndex]['opcao2'] )
+        setOpcao3( dados[opcoesIndex]['opcao3'] )
 
-        if (opcoesIndex + 1 === dados.length) {
+        if( opcoesIndex + 1 === dados.length ){
             setOpcoesIndex(0)
-        } else {
-            setOpcoesIndex(opcoesIndex + 1)
+        }else{
+            setOpcoesIndex( opcoesIndex + 1 )
         }
 
     }
@@ -174,23 +175,23 @@ function Jogo(props) {
 
     const validarEscolha = (escolha) => {
 
-        if (finalizarJogo === 1) {
+        if(finalizarJogo === 1){
             return false
         }
 
         if (escolha === opcaoCorreta) {
             // if (score >= 0) {
-            navigate('Acertou')
-            setScore(score + 1)
-            setAcertos(acertos + 1)
+                navigate('Acertou')
+                setScore(score + 1)
+                setAcertos(acertos + 1)
 
             // }
             novaOpcao()
         } else {
             // if (score > 0) {
-            navigate('Errou')
-            setScore(score - 1)
-            setErros(erros + 1)
+                navigate('Errou')
+                setScore(score - 1)
+                setErros(erros + 1)
 
             // }
             novaOpcao()
@@ -199,120 +200,162 @@ function Jogo(props) {
     }
 
     const finalizarJogo = () => {
-        if (currentTime === 0) {
-            navigate('JogoFinalizado')
-            return 1
+
+        if( currentTime === 0 ){
+
+            if( acertos > erros ){
+                setStatusJogo(1)
+            }else{
+                setStatusJogo(2)
+            }
+
+            return 0
         }
+
         return 0
     }
 
 
-    const Separator = () => ( <
-        View style = { styles.separator }
-        />
+    const Separator = () => (
+        <View style={styles.separator} />
     );
 
     const atualizarTempo = () => {
-        if (currentTime > 0) {
-            setCurrentTime(currentTime - 1)
-        } else {
+        if(currentTime > 0){
+            setCurrentTime( currentTime - 1 )
+        }else{
             finalizarJogo()
         }
     }
 
-    return (
+    const continuar = () =>{
+        navigate('TelaInicial')
+    }
 
-        <
-        View style = { styles.container } >
+    const jogoGanho =
+        <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
-        <
-        ReactInterval timeout = { 1000 }
-        enabled = { true }
-        callback = { atualizarTempo }
-        />
+                <Text style={styles.tituloVencedor}>Parabens voce Ganhou!</Text>
+                <Separator />
 
-        <
-        Text style = {
-            { fontSize: 20, marginBottom: 10, }
-        } >
-        Tempo Restante: { currentTime } <
-        /Text>
+                <Text style={ styles.total }>
+                    Pontuação Realizada: {score}
+                </Text>
+                <Separator />
 
-        <
-        Separator / >
-        <
-        Separator / >
+                <Text style={ styles.acertos }>
+                    Numero de Acertos: {acertos}
+                </Text>
+                <Separator />
 
-        <
-        Text style = {
-            { fontSize: 20, marginBottom: 10, }
-        } >
-        Score: { score } - Acertos: { acertos } - Erros: { erros } <
-        /Text>
+                <Text style={ styles.erros }>
+                    Numero de Erros: {erros}
+                </Text>
 
+                <Separator />
+                <Separator />
+                <Separator />
 
-        <
-        Separator / >
+                <Button title={'Pagina Inicial'} onPress={continuar}/>
 
-        { /*<Button style={styles.btn} title={'Nova Opção'} onPress={ novaOpcao }/>*/ }
+            </ImageBackground>
+        </View>
 
-        <
-        Separator / >
-        <
-        Separator / >
+    const jogoPerdido =
+        <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
-        <
-        Image style = { styles.img }
-        source = { imagemVez }
-        alt = "Logo" /
-        >
+                <Text style={styles.tituloPerdedor}>Infelizmente voce perdeu!</Text>
+                <Separator />
 
-        <
-        Separator / >
-        <
-        Separator / >
+                <Text style={ styles.total }>
+                    Pontuação Realizada: {score}
+                </Text>
+                <Separator />
 
-        <
-        Text style = {
-            { fontSize: 20, marginBottom: 10, }
-        } >
-        Quem é o Individuo <
-        /Text>
+                <Text style={ styles.acertos }>
+                    Numero de Acertos: {acertos}
+                </Text>
+                <Separator />
 
-        <
-        Separator / >
+                <Text style={ styles.erros }>
+                    Numero de Erros: {erros}
+                </Text>
 
-        <
-        Button style = { styles.btn }
-        title = { opcao1 }
-        onPress = { escolha1 }
-        />
+                <Separator />
+                <Separator />
+                <Separator />
 
-        <
-        Separator / >
+                <Button title={'Tentar Novamente'} onPress={continuar}/>
 
-        <
-        Button style = { styles.btn }
-        title = { opcao2 }
-        onPress = { escolha2 }
-        />
-
-        <
-        Separator / >
-
-        <
-        Button style = { styles.btn }
-        title = { opcao3 }
-        onPress = { escolha3 }
-        />
+            </ImageBackground>
+        </View>
 
 
-        { /*<Button title={'Ir Para Tela 1'} onPress={()=> navigate('TelaInicial') }/>*/ }
+    const padrao =
+        <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
-        <
-        /View>
+            <ReactInterval timeout={1000} enabled={true} callback={ atualizarTempo } />
 
-    )
+            <Text style={ styles.text }>
+                Tempo Restante: { currentTime }
+            </Text>
+
+            <Separator />
+            <Separator />
+
+            <Text style={ styles.text }>
+                Score: {score} - Acertos: {acertos} - Erros: {erros}
+            </Text>
+
+
+            <Separator />
+
+            {/*<Button style={styles.btn} title={'Nova Opção'} onPress={ novaOpcao }/>*/}
+
+            <Separator />
+            <Separator />
+
+            <Image
+                style={styles.img}
+                source={ imagemVez }
+                alt="Logo"
+            />
+
+            <Separator />
+            <Separator />
+
+            <Text style={ styles.text }>
+                Quem é o Individuo
+            </Text>
+
+            <Separator />
+
+            <Button style={styles.btn} title={opcao1} onPress={ escolha1 }/>
+
+            <Separator />
+
+            <Button style={styles.btn} title={opcao2} onPress={ escolha2 }/>
+
+            <Separator />
+
+            <Button style={styles.btn} title={opcao3} onPress={ escolha3 }/>
+
+
+            {/*<Button title={'Ir Para Tela 1'} onPress={()=> navigate('TelaInicial') }/>*/}
+
+            </ImageBackground>
+        </View>
+
+    if( statusJogo === 0 ){
+        return padrao
+    }else if( statusJogo === 1 ){
+        return jogoGanho
+    }else if( statusJogo === 2 ){
+        return jogoPerdido
+    }
 
 }
 
@@ -324,21 +367,59 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
+    },
+    image: {
+        flex: 1,
+        flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'center',
+    },
+    text: {
+        fontSize: 20,
+        marginBottom: 10,
+        color: 'rgba(0,128,255,0.69)',
+        textShadowColor:'rgba(0,128,255,0.24)',
+        textShadowOffset:{width: 1, height: 1},
+        textShadowRadius: 1,
     },
     img: {
         width: 200,
         height: 200,
-    },
-    btn: {
-
     },
     separator: {
         marginVertical: 8,
         borderBottomColor: '#737373',
         borderBottomWidth: StyleSheet.hairlineWidth,
     },
+    tituloVencedor: {
+        fontSize: 40,
+        color: '#2bb407',
+    },
+    tituloPerdedor: {
+        fontSize: 40,
+        color: '#f11b1b',
+    },
+    descricao: {
+        fontSize: 25,
+        marginBottom: 20,
+    },
+    pontuacao:{
+        fontSize: 30,
+    },
+    total: {
+        fontSize: 20,
+        color: '#136bde',
+    },
+    acertos: {
+        fontSize: 20,
+        color: '#33a107',
+    },
+    erros: {
+        fontSize: 20,
+        color: '#d00707',
+    }
 });
 
 

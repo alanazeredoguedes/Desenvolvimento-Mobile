@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, Button, TextInput, View } from 'react-native';
+import { StyleSheet, Text, Button, ImageBackground, TextInput, View } from 'react-native';
+const image = require('../../assets/background.png') ;
 
 
 function TelaInicial(props) {
@@ -19,6 +20,7 @@ function TelaInicial(props) {
     return (
 
         <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
             <Text style={styles.titulo}>JOGO DO ADIVINHE!</Text>
 
@@ -38,22 +40,29 @@ function TelaInicial(props) {
             <Separator />
             <Button title={'Iniciar Jogo'} onPress={iniciarJogo}/>
 
+            </ImageBackground>
         </View>
 
     )
 
-
 }
 
 TelaInicial.navigationOptions = {
-    title: 'Pagina Incial'
+    title: 'Pagina Incial',
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#fff',
+        //backgroundImage: `url( ${background} )`,
+        justifyContent: 'center',
+        alignItems: 'center',
+
+    },
+    image: {
+        flex: 1,
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
     },

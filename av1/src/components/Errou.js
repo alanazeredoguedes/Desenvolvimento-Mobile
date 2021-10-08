@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import { StyleSheet, Text, TextInput, ImageBackground, Button, View } from 'react-native';
+const image = require('../../assets/background.png') ;
 
 
 function Errou(props) {
@@ -15,6 +16,7 @@ function Errou(props) {
     return (
 
         <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
 
             <Text style={styles.titulo}>Infelizmente Voce Errou!</Text>
 
@@ -23,7 +25,7 @@ function Errou(props) {
             </Text>
 
             <Button title={'Continuar'} onPress={continuar}/>
-
+            </ImageBackground>
         </View>
 
     )
@@ -39,13 +41,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
     },
     titulo: {
         fontSize: 40,
         color: '#f11b1b',
         marginBottom: 30,
+    },
+    image: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     descricao: {
         fontSize: 17,
