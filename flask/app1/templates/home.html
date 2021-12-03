@@ -1,0 +1,29 @@
+{% extends "components/layout.html" %}
+
+{% block title %} Home {% endblock title %}
+
+{% block main %}
+
+    {% if (nome is defined) and (nome != '') and (sobrenome is defined) and (sobrenome != '') %}
+      <h3>Seu nome é {{ nome }} e seu sobrenome é {{ sobrenome }}</h3>
+      <br>
+    {% endif %}
+
+    <form method="POST" action="/">
+
+      <div class="form-floating mb-3">
+        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+        <label for="nome">Nome</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" name="sobrenome" class="form-control" id="sobrenome" placeholder="Sobrenome">
+        <label for="sobrenome">Sobrenome</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+
+{% endblock main %}
+

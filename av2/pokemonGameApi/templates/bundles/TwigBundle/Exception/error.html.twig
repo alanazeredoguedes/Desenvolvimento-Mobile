@@ -1,0 +1,9 @@
+
+<form action="{{ url('front_error') }}" method="post" style="display:none">
+    <input type="hidden" name="error" value="generic" style="display:none">
+    <input type="submit" id="redirect" style="display:none">
+</form>
+
+<script>
+    document.getElementById('redirect').click();
+</script>

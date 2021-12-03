@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %} Titulo {% endblock title %}</title>
+
+    {% block style %}
+      {% include "components/styles.html" %}
+    {% endblock style %}
+
+  </head>
+  <body>
+
+      {% block main %}
+
+
+
+
+      {% endblock main %}
+
+
+    {% block script %}
+      {% include "components/scripts.html" %}
+    {% endblock script %}
+
+  </body>
+</html>

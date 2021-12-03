@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b536485-b034-41d5-9282-42a113edd7bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/flask/app1/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/static/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/templates/components/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/templates/components/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/templates/components/styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/templates/formulario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app1/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/post/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/post/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/static/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/templates/components/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/templates/components/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/templates/components/styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/app2/templates/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask/exercicio/servidor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/alex-av1/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/alex-av1/components/Cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/alex-av1/components/Contador.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/alex-av1/components/Jogo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/alex-av1/components/TelaInicial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/nice.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/Xi_Jinping.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/barack-obama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/bolsonaro1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/carmen-lucia1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/lula1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/martin-luther-king-negro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/assets/opcoes/menino-ney.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/Acertou.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/Errou.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/Jogo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/JogoFinalizado.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/TelaInicial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/av1-novo/src/components/Time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provas/tradutor/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/semana 5/my-app/components/Cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/semana 5/my-app/components/Contador.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageShare" beforeDir="false" afterPath="$PROJECT_DIR$/ImageShare" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageShare/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ImageShare/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageShare/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageShare/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageShare/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageShare/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageShare/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ImageShare/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/av1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/av1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/alex-av1/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/provas/alex-av1/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/av1-novo/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/provas/av1-novo/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/tradutor" beforeDir="false" afterPath="$PROJECT_DIR$/provas/tradutor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/tradutor/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/provas/tradutor/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/tradutor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/provas/tradutor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provas/tradutor/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/provas/tradutor/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semana 5/my-app" beforeDir="false" afterPath="$PROJECT_DIR$/semana 5/my-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semana 5/my-app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/semana 5/my-app/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21KsaLJrkpOejteeiw7Fe3ZXUyB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b536485-b034-41d5-9282-42a113edd7bb" name="Changes" comment="" />
+      <created>1637701176566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637701176566</updated>
+      <workItem from="1637701178668" duration="54000" />
+    </task>
+    <servers />
+  </component>
+</project>

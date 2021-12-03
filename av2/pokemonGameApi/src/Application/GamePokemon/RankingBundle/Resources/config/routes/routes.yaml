@@ -1,0 +1,3 @@
+gamepokemon_ranking:
+    resource: "@ApplicationGamePokemonRankingBundle/Controller/"
+    type:     annotation

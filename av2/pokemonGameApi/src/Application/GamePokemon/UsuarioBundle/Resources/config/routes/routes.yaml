@@ -1,0 +1,3 @@
+gamepokemon_usuario:
+    resource: "@ApplicationGamePokemonUsuarioBundle/Controller/"
+    type:     annotation
